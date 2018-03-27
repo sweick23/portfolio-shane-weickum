@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet' href='/css/main.css')
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        title Shane Weickum's Portfolio
+
+    body
+        nav.navbar.navbar-inverse.bg-dark.col-sm-12
+            .container
+                .navbar-header
+                    .navbar-brand.title Shane Weickum
+
+                .nav.navbar-nav.justify-content-sm-start
+                    ul.nav.title(style='list-style-type: none')
+                        li.nav-item 
+                            a.nav-link.space(href='/') About
+                        li.nav-item 
+                            a.nav-link.space(href='projects') Projects
+                        li.nav-item 
+                            a.nav-link.space(href='/contact') Contact Me 
+            
+        .container
+            != messages('message', locals)
+            if errors
+                each error, i in errors
+                    div(class='alert alert-danger') #{error.msg}
+        block content
+
+        footer
+            hr
+            .container
+                p &copy; 2018 Shane Weickum
+                ul.nav.title(style='list-style-type: none')
+                    li.space.icons
+                        a.fa.fa-github(href='' target='_blank')
+                    li.space.icons
+                        a.fa.fa-linkedin-square(href='https://www.linkedin.com/in/shane-weickum-b12390/' target='_blank')
+        script(src='/bower_components/jquery/dist/jquery.js')  
+        script(src='/bower_components/bootstrap/dist/js/bootstrap.js')

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .container
+        h1 #{title}
+        p Fill out the form below to contact me via email.
+        form(method='POST', action='/sent')
+            #form-group
+                label Email:
+                input.form-control(name='email', type='email', placeholder='Enter your email')
+            #form-group
+                label Subject:
+                input.form-control(name='subject', type='text' placeholder='Subject of email')
+            #form-group
+                label Body:
+                textarea.form-control(name="body", cols="150", rows="15")
+            
+            br
+            br
+            input.btn.btn-primary(type='submit', value='Send')
+            

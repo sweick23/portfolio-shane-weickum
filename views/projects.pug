@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    .container
+        h1 #{title}
+        h5.card-title Front-End Projects
+        .row
+            
+            .col-sm-4
+                .card
+                    img.card-img-top(src="/images/bucketlist.jpg", alt="a bucket list app")
+                    .card-body
+                        h5.card-title Bucket List
+                        p.card-text This is a front end application built in Angular making use of
+                            | Angular animations.
+                        a.btn.btn-primary(href='https://sweick23.github.io/angular5-bucketList/' target='_blank') live Demo         
+                        a.btn.btn-secondary(href='https://github.com/sweick23/angular5-bucketList' target='_blank') Source Code
+            .col-sm-4
+                .card
+                    img.card-img-top(src="/images/note-master.jpg", alt="Note-Master vueJS app")
+                    .card-body
+                        h5.card-title Note-Master-vue
+                        p.card-text This application is a front-end VueJS application based off of 
+                            | my full-stack application NoteMaster
+                        a.btn.btn-primary(href='https://sweick23.github.io/notemaster/' target='_blank') live Demo        
+                        a.btn.btn-secondary(href='https://github.com/sweick23/notemaster' target='_blank') Source Code
+            
+        h5.card-title BackEnd Projects
+        .row
+            
+            .col-sm-4
+                .card
+                    img.card-img-top(src="/images/notemaster.jpg", alt="NoteMaster app")
+                    .card-body
+                        h5.card-title Take Note
+                        p.card-text This Application is a full stack application using NodeJS, Express, MongoDB, CSS3, PUG and jQuery
+                        a.btn.btn-primary(href='http://secure-woodland-59124.herokuapp.com' target='_blank') live Demo 
+                        a.btn.btn-secondary(href='https://github.com/sweick23/note-master' target='_blank') Source Code
+        
+            

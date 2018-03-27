@@ -1,0 +1,30 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "My developer Portfolio",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "portfolio"
+    },
+    "keywords": [
+        "portfolio",
+        "developer",
+        "node.js",
+        "pug",
+        "express"
+    ],
+    "author": "Shane Weickum <dweick2323@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "@sendgrid/mail": "^6.2.1",
+        "body-parser": "^1.18.2",
+        "connect-flash": "^0.1.1",
+        "express": "^4.16.3",
+        "express-messages": "^1.0.1",
+        "express-session": "^1.15.6",
+        "express-validator": "^5.0.3",
+        "mongoose": "^5.0.10",
+        "pug": "^2.0.1"
+    }
+}
