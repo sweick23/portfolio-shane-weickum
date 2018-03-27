@@ -7,7 +7,7 @@ const expressValidator = require('express-validator');
 const flash = require('connect-flash');
 const session = require('express-session');
 
-sgMail.setApiKey('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');
+sgMail.setApiKey('MY_API_KEY');
 
 
 const app = express();
