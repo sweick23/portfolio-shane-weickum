@@ -118,10 +118,7 @@ app.post('/sent', (req, res) => {
 });
 
 
-app.get('*', function(req, res, next) {
-    res.locals.user = req.user || null;
-    next();
-});
+
 
 
 app.listen(port, () => {
